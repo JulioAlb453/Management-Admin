@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Admin</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h1>Management Admin</h1>
+    
+    <div class="add-task-section">
+        <h2>Añadir registro</h2>
+        <form id="add-task-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+            <label for="finish-time">Horas trabajadas:</label>
+            <input type="number" id="finish-time" step="0.01" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+    
+    <div class="search-task-section">
+        <h2>Buscar trabajador</h2>
+        <form id="search-task-form">
+            <label for="search-name">Nombre del trabajador:</label>
+            <input type="text" id="search-name" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <p id="search-result"></p>
+    </div>
+    
+    <div class="traverse-task-section">
+        <h2>Lista de trabajadores</h2>
+        <button id="traverse-btn">Mostrar</button>
+        <ul id="traverse-result"></ul>
+    </div>
+    
+    <div class="min-max-section">
+        <h2>Buscar rendimientos</h2>
+        <button id="min-btn">Rendimiento óptimo</button>
+        <button id="max-btn">Rendimiento bajo</button>
+        <p id="min-result"></p>
+        <p id="max-result"></p>
+    </div>
+</body>
+<script type="module" src="src/controllers/Controller.js"></script>
+</html>

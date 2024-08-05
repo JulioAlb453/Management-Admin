@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f2e5;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.add-task-section,
+.search-task-section,
+.traverse-task-section,
+.min-max-section {
+    background: #b2ab99;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #f48454;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#search-result,
+#min-result,
+#max-result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#traverse-result {
+    list-style-type: none;
+    padding: 0;
+}
+
+#traverse-result li {
+    background: #b2ab99;
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 3px;
+}
